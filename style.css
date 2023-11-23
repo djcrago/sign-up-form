@@ -1,6 +1,8 @@
+/* general styling for everything */
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,15 +16,12 @@ body {
     src: url(./fonts/SmoochSans-VariableFont_wght.ttf);
 }
 
+/* stylying for the left side of the website */
 .left {
-    box-sizing: border-box;
-    margin-right: 10px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 33vw;
+    width: 33.3333333333vw;
     height: 100vh;
     background-image: url(./photos/beach.jpg);
     background-size: cover;
@@ -31,12 +30,10 @@ body {
 .logo {
     font-family: logo-font, "Times New Roman", serif;
     font-size: 1.5rem;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-    width: 100%;
     background-color: rgba(113, 212, 204, 0.33);
 }
 
@@ -55,7 +52,57 @@ img {
     width: 5rem;
 }
 
+/* styling for the right side of the website */
 .right {
-    width: 66vw;
+    width: 66.6666666666vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.879);
 }
 
+.top p {
+    font-weight: bold;
+    font-size: large;
+    max-width: 60ch;
+}
+
+.top,
+.center,
+.bottom {
+    width: 100%;
+    padding: 5%;
+    height: 33.3333vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.center {
+    background-color: white;
+    box-shadow: 0 7px 4px -4px lightgray;
+}
+
+.names,
+.info,
+.passwords {
+    display: flex;
+    gap: 32px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 20vw;
+    max-width: 30ch;
+    min-width: 15ch;
+}
