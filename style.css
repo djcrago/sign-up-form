@@ -104,6 +104,10 @@ img {
     gap: 32px;
 }
 
+.passwords {
+    flex-wrap: wrap;
+}
+
 label {
     font-size: 0.9rem;
 }
