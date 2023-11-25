@@ -59,7 +59,9 @@ img {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: rgba(245, 245, 245, 0.879);
+    color: rgb(67, 67, 67);
 }
 
 .top,
@@ -67,17 +69,25 @@ img {
 .bottom {
     width: 100%;
     padding: 5%;
-    height: 33.3333vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+}
+
+.top,
+.center {
+    justify-content: center;
 }
 
 .top p {
     font-weight: bold;
-    font-size: large;
+    font-size: 1.1rem;
     max-width: 60ch;
+}
+
+.space {
+    padding-top: 20px;
 }
 
 .center {
@@ -95,6 +105,7 @@ img {
 .inputs {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 .input {
@@ -106,4 +117,17 @@ input {
     width: 20vw;
     max-width: 30ch;
     min-width: 15ch;
+    border: 1px lightgray solid;
+    border-radius: 4%;
+    height: 1.3rem;
+    outline: none;
+}
+
+input:focus {
+    outline: solid 1px rgba(113, 212, 204, 0.33);
+    box-shadow: 0 2px 4px 0 lightgray;
+}
+
+input:invalid {
+    outline: solid 1px red;
 }
