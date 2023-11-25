@@ -66,6 +66,7 @@ img {
     width: 100%;
     padding: 5%;
     height: 30vh;
+    min-height: 225px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,6 +107,12 @@ img {
 
 .passwords {
     flex-wrap: wrap;
+    position: relative;
+}
+
+.errorMessageContainer {
+    position: absolute;
+    top: 43px;
 }
 
 label {
