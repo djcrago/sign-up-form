@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./javascript.js" defer></script>
-</head>
-<body>
-    <div class="left">
-        <div class="logo">
-            <img src="./photos/waves.svg" alt="A black and white drawing of the waves of an ocean">
-            <h1>Ocean</h1>
-            <p>TM</p>
-        </div>
-        <footer>Photo by <a href="https://unsplash.com/@joelvodell?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joel Vodell</a> on <a href="https://unsplash.com/photos/iphone-wallpaper-8Ogfqvw15Rg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></footer>
+  </head>
+  <body>
+    <div class="graphic">
+      <div class="logo">
+        <img
+          src="./photos/waves.svg"
+          alt="A black and white drawing of the waves of an ocean"
+        />
+        <h1>Ocean</h1>
+        <p>TM</p>
+      </div>
+      <footer>
+        Photo by
+        <a
+          href="https://unsplash.com/@joelvodell?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Joel Vodell</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/iphone-wallpaper-8Ogfqvw15Rg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </footer>
     </div>
-    <div class="right">
-        <div class="top">
-            <p>This is not a real online service! You know you 
-                            need something like this in your life to help you 
-                            realize your deepest dreams.</p>
-            <p>Sign up <em>now</em> to get started.</p>
-            <p class="space">You <em>know</em> you want to.</p>
-        </div>
-        <div class="center">
-            <form>
-                <h3>Let's do this!</h3>
-                <div class="inputs">
-                    <div class="names space">
-                        <div class="input">
-                            <label for="fname">First Name</label>
-                            <input type="text" name="fname" id="fname">
-                        </div>
-                        <div class="input">
-                            <label for="lname">Last Name</label>
-                            <input type="text" name="lname" id="lname">
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="input">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="input">
-                            <label for="tel">Phone Number</label>
-                            <input type="tel" name="tel" id="tel">
-                        </div>
-                    </div>
-                    <div class="passwords">
-                        <div class="input">
-                            <label for="password1">Password</label>
-                            <input type="password" name="password1" id="password1">
-                        </div>
-                        <div class="input">
-                            <label for="password2">Confirm Password</label>
-                            <input type="password" name="password2" id="password2">
-                        </div>
-                        <div class="errorMessageContainer"></div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="bottom">
-            <form action="./createaccountlink.com" method="post">
-                <button type="submit">Create Account</button>
-            </form>
-            <p>Already have an account?
-                <a href="./loginlink.com" rel="noopener noreferrer">Log in</a>
-            </p>
-        </div>
+    <div class="content">
+      <div class="section info">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="section form">
+        <h3>Let's do this!</h3>
+        <form>
+          <div class="row">
+            <div class="input">
+              <label for="first_name">First Name</label>
+              <input type="text" name="first_name" id="first_name" />
+            </div>
+            <div class="input">
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="input">
+              <label for="telephone">Phone Number</label>
+              <input type="tel" name="telephone" id="telephone" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="input">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+              />
+            </div>
+            <div class="errorMessage"></div>
+          </div>
+        </form>
+      </div>
+      <div class="section submit">
+        <form action="/">
+          <button type="submit">Create Account</button>
+        </form>
+        <p>
+          Already have an account?
+          <a href="/" rel="noopener noreferrer">Log in</a>
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
